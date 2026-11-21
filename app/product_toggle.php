@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/config.php'; require_login(); verify_csrf(); $id=(int)($_POST['id']??0); $s=db()->prepare('UPDATE productos SET estado=0 WHERE id_producto=?');$s->execute([$id]);flash('success','Producto desactivado. Se conserva su historial de movimientos.');redirect('index.php');

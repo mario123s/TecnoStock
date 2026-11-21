@@ -1,0 +1,1 @@
+</main><footer>© <?=date('Y')?> TecnoStock · Inventario seguro y simple</footer><script>document.querySelectorAll('[data-confirm]').forEach(b=>b.addEventListener('click',e=>{if(!confirm(b.dataset.confirm))e.preventDefault()}));</script></body></html>
